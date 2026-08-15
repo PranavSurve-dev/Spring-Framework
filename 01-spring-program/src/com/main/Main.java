@@ -11,9 +11,16 @@ public class Main {
 	     
 		 String config_loc = "/com/resources/applicationContext.xml";
 		 ApplicationContext context = new ClassPathXmlApplicationContext(config_loc);
-		 
-		 Student std = (Student)context.getBean("stdId");
-		 std.display();
+		 System.out.println("Data Read from Spring Container");
+		 System.out.println("----------------------------------");
+		 Student std1 = (Student)context.getBean("stdId1");
+		 std1.display();
+		 System.out.println("=========================");
+		 Student std2 = (Student)context.getBean("stdId2");
+		 std2.display();
+		 System.out.println("=========================");
+		 Student std3 = (Student)context.getBean("stdId3");
+		 std3.display();
 	}
 }
 

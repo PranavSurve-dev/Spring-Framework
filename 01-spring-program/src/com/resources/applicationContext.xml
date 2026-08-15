@@ -4,12 +4,29 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
         
-        <bean class="com.beans.Student" id ="stdId">
+        <bean class="com.beans.Student" id ="stdId1">
         
-        <property name ="name" value= "panya"></property>
-        <property name ="rollno" value= "100"></property>
+        <property name ="name" value= "pranav"></property>
+        <property name ="rollno" value= "101"></property>
         <property name ="email" value= "panya@gmail.com"></property>
         
         </bean>
+        
+        <bean class="com.beans.Student" id ="stdId2">
+        
+        <property name ="name" value= "omkar"></property>
+        <property name ="rollno" value= "102"></property>
+        <property name ="email" value= "omkar@gmail.com"></property>
+        
+        </bean>
+        
+        <bean class="com.beans.Student" id ="stdId3">
+        
+        <property name ="name" value= "surve"></property>
+        <property name ="rollno" value= "103"></property>
+        <property name ="email" value= "surve@gmail.com"></property>
+        
+        </bean>
+
 
 </beans>

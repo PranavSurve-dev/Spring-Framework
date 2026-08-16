@@ -7,10 +7,12 @@ import com.beans.Student;
 
 @Configuration
 public class SpringConfigFile {
-    @Bean
-	public Student stdId1(){
+	
+    @Bean("stdObj1")
+	public Student CreateStdBeanObj1(){
     	
-    	Student std = new Student();
+    	Student std = new Student();//Object creation
+    	
     	std.setName("Rohit");
     	std.setRollno(111);
     	std.setEmail("Rohit@gmail.com");
@@ -18,5 +20,28 @@ public class SpringConfigFile {
 		return std;
 		
 	}
+    
+    @Bean("stdObj2")
+ 	public Student CreateStdBeanObj2(){
+     	
+     	Student std = new Student();
+     	std.setName("Omkar");
+     	std.setRollno(222);
+     	std.setEmail("Omkar@gmail.com");
+     	
+ 		return std;
+ 		
+ 	}
 	
+    @Bean("stdObj3")
+ 	public Student CreateStdBeanObj3(){
+     	
+     	Student std = new Student();
+     	std.setName("Vedant");
+     	std.setRollno(333);
+     	std.setEmail("Vedant@gmail.com");
+     	
+ 		return std;
+ 		
+ 	}
 	}

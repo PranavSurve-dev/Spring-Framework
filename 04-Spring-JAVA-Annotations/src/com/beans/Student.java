@@ -12,6 +12,7 @@ public class Student {
 	private int RollNo;
 	@Value("80.20")
 	private float Marks;
+	
 	public String getName() {
 		return Name;
 	}
